@@ -3,6 +3,12 @@
 ## Overview
 The Customer Insights Dashboard is a comprehensive web application designed to provide businesses with valuable insights into their customer interactions, sales data, and overall performance. It offers a rich set of analytics and data visualization components to help companies understand their market position, optimize their sales strategies, and improve customer satisfaction.
 
+## Live Demo
+
+You can try out the live version of the Customer Insights Dashboard here: [https://customerinsightsdash.netlify.app/login](https://customerinsightsdash.netlify.app/login)
+
+Feel free to explore the features and functionalities of the dashboard. This version is deployed on Netlify and reflects the latest state of the project.
+
 ## Project Structure
 
 ### `src` Directory
