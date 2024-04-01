@@ -26,7 +26,7 @@ export const useForm = (initialValues, onSubmit) => {
 
 
 
-    const renderFormControl = ({ name, type = "text", placeholder, as = "input", required = false, label }) => (
+    const renderFormControl = ({ name, type = "text", placeholder, as = "input", required = false, label, pattern }) => (
         <Form.Group controlId={"form" + name.charAt(0).toUpperCase() + name.slice(1)}>
             <Form.Label>{placeholder}</Form.Label>
             <Form.Control
@@ -39,10 +39,13 @@ export const useForm = (initialValues, onSubmit) => {
                 onChange={handleChange}
                 aria-label={label || placeholder}
                 required={required}
+                pattern={pattern}
             />
 
         </Form.Group >
     );
+
+
 
     return { handleSubmit, error, success, renderFormControl };
 };
