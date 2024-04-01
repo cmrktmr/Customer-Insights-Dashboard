@@ -28,7 +28,7 @@ const Register = () => {
                         {renderFormControl({ name: "email", type: "email", placeholder: "Email Address", required: true })}
                         {renderFormControl({ name: "password", type: "password", placeholder: "Password", required: true })}
                         {renderFormControl({
-                            name: "phone", type: "tel", placeholder: "Phone Number", pattern: "^[0-9]*$",
+                            name: "phone", type: "tel", placeholder: "Phone Number", pattern: "^[0-9]*$", minLength: 10, maxLength: 15, required: true
                         })}
 
                         <Button variant="primary" type="submit" className="w-100 mt-4">Register</Button>
