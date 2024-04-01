@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo,useCallback } from 'react';
 import PaginationComponent from '../paginatedData/paginationWidget';
-import { Accordion, Card } from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 import { paginateData } from '../../utils/paginationHelper.js';
 
 const CallCenterAnalytics = ({ data }) => {

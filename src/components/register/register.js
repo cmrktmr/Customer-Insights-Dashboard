@@ -1,11 +1,10 @@
 import React from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useForm } from '../../hooks/useForm';
 import { Container, Form, Button, Alert, Row, Col } from 'react-bootstrap';
 
 const Register = () => {
-    const navigate = useNavigate();
     const { register } = useAuth();
     const { handleSubmit, error, success, renderFormControl } = useForm({
         name: '',
